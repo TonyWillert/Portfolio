@@ -4,13 +4,13 @@
 
 I combine a background in education with Python, statistics, and machine learning. My projects turn data into findings that people can understand and tools they can explore.
 
-## Featured project
+## Selected projects
 
 ### LearnerCue: Who should coaches review first?
 
 When coaching time is limited, the order of review matters. LearnerCue uses historical course data to explore which still-enrolled learners could be reviewed first on a given course day. Coaches remain responsible for deciding whether and how to offer support.
 
-**[Try the interactive demo](https://fwsproject-cjpggxprduvuak9kugbusk.streamlit.app/)** · **[Explore the code, notebooks, and documentation](https://github.com/TonyWillert/FWS_Project)**
+**[Open the live demo app](https://fwsproject-cjpggxprduvuak9kugbusk.streamlit.app/)** · **[Read the project and explore the code](https://github.com/TonyWillert/FWS_Project)**
 
 - **Data and question:** Open University Learning Analytics Dataset (OULAD). The analysis covers 16 weekly checkpoints and uses only information available by each checkpoint.
 - **Analysis and modelling:** Data quality checks, exploratory analysis, comparisons with simple references and several models, temporal evaluation, and exported weekly Histogram Gradient Boosting models.
@@ -19,7 +19,20 @@ When coaching time is limited, the order of review matters. LearnerCue uses hist
 
 The public demo uses **synthetic data to show the interface**. The figures above come from a separate historical OULAD evaluation. The 2014J data were revisited during development, so these are exploratory results rather than an untouched final test. They do not establish that coach outreach prevents withdrawal or that the model transfers to another institution. The management view is labelled as a provisional planning scenario.
 
-**Tools:** Python · pandas · scikit-learn · Streamlit · Jupyter · Git
+### What this project demonstrates
+
+| Skill | Evidence in LearnerCue |
+| --- | --- |
+| Educational research | Defined a time-specific question and outcome, checked what OULAD can and cannot support |
+| Data analysis | Joined and inspected course, registration, assessment, and activity data; built weekly snapshots without later outcomes as inputs |
+| Machine learning | Compared baselines and models, separated people in development splits, trained 16 weekly pipelines, and reported precision, recall, and Average Precision |
+| Evaluation and judgement | Tested on later course presentations, disclosed repeated inspection of 2014J, examined group differences, and limited claims to exploratory findings |
+| Product development | Built a bilingual Streamlit app with a coach workflow, input validation, synthetic demo data, and a printable course report |
+| Communication | Documented methods, results, limitations, and a runnable public demonstration |
+
+**Stack:** Python · pandas · scikit-learn · Streamlit · Jupyter · Git
+
+Each future project can follow the same compact pattern: the question, the work and tools, a concrete result, the limitations, and links to a demo or repository. This page will grow as completed projects are ready to show.
 
 ## About me
 
