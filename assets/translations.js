@@ -14,7 +14,7 @@ window.PORTFOLIO_TRANSLATIONS = {
     "home.meta": "Tony Willert: data analysis with R and Python, quantitative research, and selected projects in education and machine learning.",
     "home.eyebrow": "Tony Willert · Potsdam, Germany",
     "home.heading": "Data analysis for<br><em>research &amp; education.</em>",
-    "home.intro": "My work combines quantitative research, statistical analysis and machine learning. With an M.A. in Educational Sciences and practical experience in R and Python, I develop analyses and applications for research and education.",
+    "home.intro": "My work combines quantitative research, statistical analysis and machine learning. With an M.A. in Educational Sciences and practical experience using R and Python, I conduct analyses and build applications for research and education.",
     "home.cta": "Explore my work",
     "home.aboutcta": "More about me",
     "home.fact1label": "Background",
