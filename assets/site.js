@@ -3,14 +3,13 @@
   const translations = window.PORTFOLIO_TRANSLATIONS;
   const page = document.body.dataset.page;
   const base = document.body.dataset.base || './';
-  const prefix = {home: 'home', learnercue: 'lc', pisa2022: 'pisa'}[page];
+  const prefix = {home: 'home', learnercue: 'lc', pisa2022: 'pisa', imprint: 'imprint', privacy: 'privacy'}[page];
   const storageKey = 'tony-willert-portfolio-language';
   let language = 'en';
-  try {
-    const query = new URL(location.href).searchParams.get('lang');
-    const stored = localStorage.getItem(storageKey);
-    language = ['en', 'de'].includes(query) ? query : (['en', 'de'].includes(stored) ? stored : 'en');
-  } catch (_) {}
+  const query = new URL(location.href).searchParams.get('lang');
+  let stored = null;
+  try { stored = localStorage.getItem(storageKey); } catch (_) {}
+  language = ['en', 'de'].includes(query) ? query : (['en', 'de'].includes(stored) ? stored : 'en');
 
   function setLanguage(next, updateURL) {
     if (!translations[next]) return;
@@ -43,8 +42,8 @@
       url.searchParams.set('lang', next);
       link.href = url.href;
     });
-    try { localStorage.setItem(storageKey, next); } catch (_) {}
     if (updateURL) {
+      try { localStorage.setItem(storageKey, next); } catch (_) {}
       const url = new URL(location.href);
       url.searchParams.set('lang', next);
       history.replaceState(null, '', url);
